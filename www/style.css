@@ -1,0 +1,193 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+#currentSpeed {
+    padding: 0 20px 0 20px;
+    font-size: 60px;
+}
+
+#currentSpeedWrapper {
+    border: 3px solid #3e8e41;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 40%;
+    margin-top:20px;
+}
+
+#unit {
+    float: right;
+    padding-right: 20px;
+    font-size: 40px;
+    color: gray;
+    padding-top: 12px;
+}
+
+#setSpeedValueWrapper {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 20px;
+    text-align: center;
+    min-height: 34px;
+}
+
+#SetSpeedValue {
+    font-size: 30px;
+    width: 30px;
+}
+
+#rpmSliderWrapper {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 10px;
+}
+
+#rpmSlider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+#rpmSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#setSpeedWrapper input[type=button] {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: solid white 5px;
+    border-radius: 15px;
+}
+
+input[type=button]:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
+#setSpeedWrapper {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+#controlButtonsWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+.isHidden {
+    display: none;
+}
+
+#firstLoad {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+#replaceDiv {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.replaceSpan {
+    color: #d3d3d3;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.isDisabled{
+    background-color: gray;
+    font-size: 24px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: solid white 5px;
+    margin: 30px;
+}
+
+.isEnabled{
+    background-color: #4CAF50;
+    font-size: 24px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: solid white 5px;
+    margin: 30px;
+}
+
+.toStop{
+    background-color: red;
+    font-size: 24px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: solid white 5px;
+    margin: 30px;
+}
+
+.toStart{
+    background-color: #4CAF50;
+    font-size: 24px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: solid white 5px;
+    margin: 30px;
+}
+
+.isClickable{
+pointer-events: auto;
+}
+
+.isNotClickable{
+pointer-events: none;
+}
+
+[disabled] { 
+    cursor: not-allowed;
+}
+
+[enabled]{
+    cursor: auto;
+}
