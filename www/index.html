@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HMI</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<div id="firstLoad"><span class="replaceSpan">Connecting...</span></div>
+<div id="main" class="isHidden">
+    <div id="currentSpeedWrapper">
+        <span id="currentSpeed">0</span>
+        <span id="unit">RPM</span>
+    </div>
+    <div id="setSpeedValueWrapper">
+        <span id="setSpeedValue" class="isHidden">0</span>
+    </div>
+    <div id="rpmSliderWrapper">
+            <input id="rpmSlider" type="range" min="0" max="1400" value="0" oninput="updateSlider(this.value)">
+    </div>
+    <div id="setSpeedWrapper">
+        <input id="setSpeed" type="button" value="Set Speed">
+    </div>
+    <div id="controlButtonsWrapper">
+            <input class="toStart" id="startStopButton" type="button" value="Start">
+            <input class="isEnabled" id="forwardButton" type="button" value="Forward">
+            <input class="isDisabled" id="reverseButton" type="button" value="Reverse">
+    </div>
+</div>
+    <div id="replaceDiv" class="isHidden"><span class="replaceSpan">Connection to server is lost, reconnecting...</span></div>
+</body>
+<script src="reconnectWs.js"></script>
+<script src="main.js"></script>
+
+</html>
